@@ -1,0 +1,56 @@
+.DS_Store
+
+*.pyc
+*.pyo
+*.sublime-workspace
+
+# Local TODO notes
+TODO
+handy_commands.txt
+post-uploads/*
+
+# Coverage files
+*.coverage
+htmlcov
+cover
+coverage/*
+
+# Selenium files
+geckodriver.log
+
+# Temporary files
+*~
+tmp/
+tmp/*
+
+
+# Database files
+*.sqlite
+
+# Virtualenv environments
+env*/
+env
+venv/
+
+# uploads folsers
+uploads/
+
+# Build artifacts from python setup.py build or python setup.py install
+build/
+dist/
+*egg*/
+*.egg-info
+docs/_build
+_mailinglist
+.tox
+.cache/
+.idea/
+
+#SASS
+*.css.map
+*.map
+*.css
+styles/.sass-cache/*
+styles/.sass-cache
+.sass-cache/
+

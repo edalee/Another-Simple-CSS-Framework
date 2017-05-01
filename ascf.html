@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Another Simple Framework</title>
+    <link rel="stylesheet" type="text/css" href="ascf.css">
+    <script src="js/ascf.js"></script>
+</head>
+<body>
+
+<div class="basic-wrapper page-padding">
+    <div class="mainheader">
+        <h1>Another Simple CSS Framework</h1>
+        <hr>
+    </div>
+    <div class="sidebar">
+        <h6>Page Content</h6>
+        <ol>
+            <li><a href="">Overview.</a></li>
+            <li><a href="#paragraphing">Paragraphing.</a></li>
+            <li><a href="#forms">Forms.</a></li>
+            <li><a href="#code">Code Example.</a></li>
+            <li><a href="#grid">Grid.</a></li>
+        </ol>
+
+    </div>
+
+    <div class="content">
+        <p><b>ASCF was created for a blog C.M.S;  therefore simple, clean, and maintainable code.
+        Focus and some flare has been placed on forms, Nav, and buttons to enhance the writers experience.
+        </b></p>
+        <p>* It is based on Skeleton V2.0.4. written by Dave Gamache, Copyright 2014. Free to use under
+        the MIT license.</p>
+        <hr>
+
+        <h4>What you get</h4>
+        <ul>
+            <li>Written in SASS's SCSS.</li>
+            <li>Minimalist styling.</li>
+            <li>Graceful animated interactive fields.</li>
+            <li>A simple Vanilla JS Navigation.</li>
+            <li>Fully responsive.</li>
+            <li>A Grid system (as per Skeleton).</li>
+            <li>Flexbox.</li>
+        </ul>
+
+
+        <hr>
+
+        <h4 id="paragraphing">Attractive Flexbox Text Columns:</h4>
+        <h6>Single column paragraph</h6>
+        <div class="f-column">
+            <div class="f-col-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h6>Double column paragraph</h6>
+        <div class="f-column">
+            <div class="f-col-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div class="f-col-2">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h6>Triple column paragraph</h6>
+        <div class="f-column">
+            <div class="f-col-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="f-col-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="f-col-3">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </blockquote>
+
+        <hr>
+
+        <h4 id="forms">Interactive Forms:</h4>
+        <form action="" class="flex-form">
+            <label for="textexmp" id="textareaLabel" class="animate">TextArea</label>
+            <textarea name="textarea" id="textexmp" placeholder="Enter text..."></textarea>
+            <fieldset>
+            <label for="email" id="emailLabel" class="animate">Email</label>
+            <input type="email" name="email" id="emailexmp" placeholder="Enter email...">
+            <label for="password" id="passwordLabel" class="animate">Password</label>
+            <input type="password" name="password" id="passexmp" placeholder="password">
+            <input type="submit" value="Submit" id="submitexmp" class="">
+            </fieldset>
+        </form>
+
+
+        <h4 id="code">Code styling:</h4>
+        <div class="f-column">
+            <pre class="code-block"><code>
+import urllib, re, os, smtplib
+from email_config import *
+
+# Check file to exists if not create it to store ip address
+filename = 'current_ip.txt'
+if not os.path.isfile(filename):
+    file(filename, 'w').close()
+
+# Get your current ip
+current_ip = re.search(
+    '"([0-9.]*)"', urllib.urlopen("http://ip.jsontest.com/").read()
+).group(1)
+
+# Open stored ip address
+stored_ip = open(filename)
+read_ip = stored_ip.read()
+stored_ip.close()
+
+# test
+# current_ip = "201.2.64.06"
+
+message = "\r\n".join(["From: edlee@gmail@gmail.com",
+"To: edlee.wwp@gmail.com",
+"Subject: ip Change",
+"",
+"Your ip address has changed.\nNew ip address is %s" % current_ip
+])
+
+# Check stored address against current address
+if read_ip == current_ip:
+    print("ip not changed")
+    print(read_ip)
+else:
+    print("ip has changed")
+    print(current_ip)
+    write_ip = open(filename, 'w')
+    write_ip.write(current_ip)
+    write_ip.close()
+    try:
+        server.ehlo()
+        server.starttls()
+        server.login(username,password)
+        server.sendmail(sender, receiver, message)
+        print("Successfully sent")
+    except:
+        print"Error: unable to send mail"
+            </code></pre>
+        </div>
+        <h4 id="grid">Grids:</h4>
+        <p>
+        Currently only a basic area grid is available. Perfect for text heavy sites.
+        And, is what you see here, in use on this page. This is fully responsive and supports
+        additional flexbox columns as you see in the paragraph sections, above. The intention is
+        increase support for images, and a larger grid system in the near future.
+        </p>
+        <h6>Basic Area Grid.</h6>
+        <p>This has four defined areas:
+        <ul>
+            <li>Main Header section</li>
+            <li>Content section</li>
+            <li>Side bar section </li>
+            <li>footer section</li>
+        </ul>
+        These can be reconfigured at will, in any order or postioning of your choosing. Simple
+        by changing the 'grid-temple-area' order. Or, by changing the 'grid-temple-columns' to
+        reconfigure the amount of columns in the layout.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

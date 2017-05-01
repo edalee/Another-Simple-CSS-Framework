@@ -1,0 +1,12 @@
+/*
+* Again borrowed from Skeleton V2.0.4. Copyright 2014, Dave Gamache
+* www.getskeleton.com. Free to use under the MIT license.
+*/
+
+@function grid-column-width($n) {
+  @return $column-width * $n - ($column-margin*($total-columns - $n)/$total-columns);
+}
+
+@function grid-offset-length($n) {
+  @return grid-column-width($n) + $column-margin;
+}

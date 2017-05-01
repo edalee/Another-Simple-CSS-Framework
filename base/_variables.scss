@@ -1,0 +1,66 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Global spacing
+$page-padding: 2em 2em;
+$mobile-padding: 1em 1em;
+$page-padding-with-sidebar: 2em 2em 2em 10em;
+
+// Colours
+$light-grey: #F4F4F4 !default;
+$very-light-grey: #F7F7F7 !default;
+$dark-grey: #333 !default;
+
+// Main Style (e.g.: logo colours)
+$primary-color: #8ED1C5 !default;
+$error-color: #f75656 !default;
+// $primary-color: #33c3f0 !default;
+
+
+
+$strong-background-color: #8ed1c5 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$strong-border-color: #ddd !default;
+$lite-border-color: #b8cacb !default;
+
+
+// Interactive Colours
+$button-border-color: #3DB8CC !default;
+$button-primary-color: #333 !default;
+$border-button-highlight-color: #727e7e !default;
+$button-background-color: #FFA7A6 !default;
+
+$link-color: #1eaedb !default;
+
+
+// Font-Colours
+$font-color: #222 !default;
+$lite-font-color: #b9c9cc !default;
+$headings-color: #B9C9CC !default;
+
+
+// Typography
+$font-family: "Raleway", Helvetica, Arial, sans-serif !default;
+$headings: "Raleway-Light", Helvetica, Arial, sans-serif !default;
+$small-headings: "Raleway-Bold", Helvetica, Arial, sans-serif !default;
+$mono: "Ubuntu-Mono", monospace !default;
+
+//Grid Variables
+$base-wrapper-width: 300px !default;
+
+$wrapper-width-larger-than-mobile: 400px !default;
+$wrapper-width-larger-than-phablet: 500px !default;
+$wrapper-width-larger-than-tablet: 600px !default;
+$wrapper-width-larger-than-desktop: 1120px !default;
+
+
+// Misc
+$global-radius: 4px !default;
+

@@ -1,0 +1,24 @@
+// Utilities
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.f-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.f-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.f-pull-right {
+  margin-right: auto;
+}
+
+.f-pull-left {
+  margin-left: auto;
+}
+
+.border {
+  border: 1px #333 solid;
+}

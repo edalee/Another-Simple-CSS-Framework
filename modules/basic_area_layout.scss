@@ -1,0 +1,85 @@
+// Basic Area Layout
+// This is perfect for a page with side bar.
+
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.mainheader {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.panel {
+  grid-area: sidebar;
+}
+
+.mainfooter {
+  grid-area: footer;
+}
+
+.basic-wrapper {
+  display: grid;
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  max-width: $base-wrapper-width;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "footer";
+}
+
+@media (#{$bp-larger-than-mobile}) {
+  .basic-wrapper {
+    padding: $mobile-padding;
+    max-width: $wrapper-width-larger-than-mobile;
+    grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    }
+}
+
+@media (#{$bp-larger-than-phablet}) {
+  .basic-wrapper {
+    margin: 0 auto;
+    padding: $mobile-padding;
+    max-width: $wrapper-width-larger-than-phablet;
+    grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    }
+}
+
+@media (#{$bp-larger-than-tablet}) {
+  .basic-wrapper {
+    grid-column-gap: 2em;
+    grid-row-gap: 20px;
+    max-width: $wrapper-width-larger-than-tablet;
+    padding: $page-padding;
+    grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    }
+}
+
+@media (#{$bp-larger-than-desktop}) {
+  .basic-wrapper {
+    max-width: $wrapper-width-larger-than-desktop;
+    padding: $page-padding-with-sidebar;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "header  header"
+      "content sidebar"
+      "footer footer"
+  }
+}
