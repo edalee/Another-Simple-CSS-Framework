@@ -54,3 +54,5 @@ styles/.sass-cache/*
 styles/.sass-cache
 .sass-cache/
 
+# Allows
+! docs/*.css
