@@ -1,9 +1,5 @@
 
-// var formInputs = form.childNodes
-// console.log(formNodes)
-
 function active_input(event) {
-    // console.log(this.type, event.type);
     var input = this.name
     var v = this.value
     var labelElement = document.getElementById(input+'Label')
@@ -30,7 +26,6 @@ function addInputListeners() {
     var fields = []
     fields.push.apply(fields,inputs)
     fields.push.apply(fields,textfields)
-    // console.log(fields)
     var events = ['blur', 'focus', 'keydown', 'keyup']
 
     do {
